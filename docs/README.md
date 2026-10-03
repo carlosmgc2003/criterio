@@ -1,11 +1,12 @@
 # Corrección asistida por agentes con revisión docente
 
 **Tipo de documento:** concepto de producto y requisitos iniciales — PRD
-**Versión:** 0.6
+**Versión:** 0.7
 **Fecha:** 2026-10-03
 **Estado:** borrador para explorar y validar
 **Alcance:** solución genérica para corregir ejercicios, exámenes y trabajos prácticos.
 
+> **Nota de versión (0.7):** agrega al problema el costo de reunir respuesta, consigna y criterios dispersos, en espejo con la idea fuerza 5.
 > **Nota de versión (0.6):** agrega dos ideas fuerza de experiencia: reunir respuesta, consigna y rúbrica en un golpe de vista, y aprovechar el tiempo escaso de corrección con trazabilidad y pausa/reanudación.
 > **Nota de versión (0.5):** admite entregas individuales o grupales, siempre atribuidas a un alumno o grupo identificado; elimina los autores sin identificar.
 > **Nota de versión (0.4):** establece la atribución unívoca de cada entrega y elimina las asociaciones dudosas.
@@ -76,6 +77,7 @@ Corregir una evaluación requiere identificar entregas, interpretar respuestas, 
 
 Actualmente, esas tareas pueden quedar repartidas entre archivos, conversaciones y anotaciones. Esto dificulta:
 
+- Reunir la respuesta, la consigna y los criterios sin saltar entre archivos y pantallas.
 - Saber qué partes de una entrega siguen pendientes.
 - Distinguir una propuesta del agente de una conclusión docente.
 - Retomar una corrección sin volver a leer todo.
