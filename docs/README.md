@@ -1,12 +1,13 @@
 # Corrección asistida por agentes con revisión docente
 
 **Tipo de documento:** concepto de producto y requisitos iniciales — PRD
-**Versión:** 0.4
+**Versión:** 0.5
 **Fecha:** 2026-10-03
 **Estado:** borrador para explorar y validar
 **Alcance:** solución genérica para corregir ejercicios, exámenes y trabajos prácticos.
 
-> **Nota de versión (0.4):** asume que cada entrega se identifica de forma unívoca con un alumno; elimina las asociaciones dudosas y las entregas grupales.
+> **Nota de versión (0.5):** admite entregas individuales o grupales, siempre atribuidas a un alumno o grupo identificado; elimina los autores sin identificar.
+> **Nota de versión (0.4):** establece la atribución unívoca de cada entrega y elimina las asociaciones dudosas.
 > **Nota de versión (0.3):** resuelve las decisiones sobre tipos de evaluación prioritarios, criterio de cierre de entrega, información entregada al alumno y alojamiento de datos.
 > **Nota de versión (0.2):** incorpora la visión del producto y enlaza los principios de funcionamiento con esa visión. El resto del documento mantiene la estructura y el alcance de la versión 0.1.
 
@@ -102,7 +103,7 @@ Entradas necesarias:
 |---|---|
 | Consigna | Preguntas, actividades, requisitos y entregables esperados |
 | Rúbrica | Criterios, niveles de desempeño, pesos y reglas de calificación |
-| Entregas | Respuestas y archivos de cada alumno |
+| Entregas | Respuestas y archivos de cada alumno o grupo |
 
 Entradas opcionales: nómina de alumnos, respuesta de referencia, aclaraciones docentes y exportación de un campus virtual.
 
@@ -116,9 +117,10 @@ La identidad del alumno puede permanecer oculta durante la revisión si el profe
 
 El sistema registra los archivos recibidos, su procedencia y una huella del contenido para detectar duplicados y distinguir versiones.
 
-Identifica cada entrega y la atribuye de forma unívoca a un alumno, a partir de la nómina o del origen de la carga. No se prevén asociaciones dudosas ni asignaciones especulativas: si un archivo no puede atribuirse con certeza, se informa como excepción en lugar de proponer un vínculo. Debe contemplar:
+Identifica cada entrega y la atribuye de forma unívoca a un alumno o grupo, a partir de la nómina o del origen de la carga. Toda entrega corresponde a un alumno o grupo identificado; no se contemplan autores sin identificar ni asociaciones dudosas. Debe contemplar:
 
 - Varios archivos para una misma entrega.
+- Entregas grupales.
 - Versiones alternativas o reentregas.
 - Archivos ilegibles, incompletos o mencionados pero ausentes.
 
@@ -319,7 +321,7 @@ La ejecución de código entregado, si se incorpora, requiere un servicio aislad
 La primera versión debe completar el recorrido con una evaluación y sus entregas:
 
 1. Cargar consigna, rúbrica y archivos.
-2. Identificar cada entrega y verificar su atribución unívoca al alumno.
+2. Identificar cada entrega y verificar su atribución unívoca al alumno o grupo.
 3. Preparar y ajustar unidades de revisión.
 4. Generar observaciones con evidencia localizable.
 5. Aceptar, editar, descartar y agregar feedback propio.
