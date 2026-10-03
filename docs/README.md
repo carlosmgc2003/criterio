@@ -1,11 +1,12 @@
 # Corrección asistida por agentes con revisión docente
 
 **Tipo de documento:** concepto de producto y requisitos iniciales — PRD
-**Versión:** 0.5
+**Versión:** 0.6
 **Fecha:** 2026-10-03
 **Estado:** borrador para explorar y validar
 **Alcance:** solución genérica para corregir ejercicios, exámenes y trabajos prácticos.
 
+> **Nota de versión (0.6):** agrega dos ideas fuerza de experiencia: reunir respuesta, consigna y rúbrica en un golpe de vista, y aprovechar el tiempo escaso de corrección con trazabilidad y pausa/reanudación.
 > **Nota de versión (0.5):** admite entregas individuales o grupales, siempre atribuidas a un alumno o grupo identificado; elimina los autores sin identificar.
 > **Nota de versión (0.4):** establece la atribución unívoca de cada entrega y elimina las asociaciones dudosas.
 > **Nota de versión (0.3):** resuelve las decisiones sobre tipos de evaluación prioritarios, criterio de cierre de entrega, información entregada al alumno y alojamiento de datos.
@@ -15,16 +16,23 @@
 
 La corrección no es un cuello de botella administrativo: es un acto docente. El sistema existe para proteger ese acto, no para reemplazarlo.
 
-La visión del producto se sostiene en cuatro afirmaciones:
+La visión del producto combina cuatro afirmaciones sobre el sentido del sistema y dos ideas fuerza sobre cómo debe sentirse usarlo.
+
+**Afirmaciones**
 
 1. **No deshumanizar la corrección.** La corrección es un juicio humano y la calificación es responsabilidad del profesor. El sistema organiza, evidencia y propone; nunca decide. Un resultado sin revisión y aprobación docente es un borrador, no una calificación.
 2. **Suplementar la devolución agéntica.** Los agentes se suman al trabajo del profesor, no lo sustituyen. Absorben la carga mecánica —recorrer entregas, localizar respuestas, aplicar criterios, ordenar hallazgos— para devolverle al docente el margen de criterio que solo él puede ejercer.
 3. **Mantener el engagement profesor-alumno.** La devolución no es un veredicto: abre una conversación. El sistema debe mejorar el material con el que el profesor dialoga con el alumno, no interponerse entre ambos ni clausurar el intercambio.
 4. **Mejorar la calidad de vida de los profesores al finalizar los semestres.** El cierre de semestre es el pico de carga y el punto donde se degrada la docencia. Aliviar ese pico de forma verificable es la métrica de éxito del producto.
 
+**Ideas fuerza**
+
+5. **Respuesta, consigna y rúbrica en un golpe de vista.** Cada unidad de revisión presenta juntos el material del alumno, la consigna aplicable y los criterios de la rúbrica, para que el profesor juzgue con todo el contexto a la vista, sin cambiar de pantalla ni de archivo.
+6. **Tiempo escaso de corrección aprovechado al máximo.** El sistema lleva trazabilidad de lo hecho y lo pendiente, y permite pausar y reanudar la corrección de forma rápida y eficaz, para que el profesor aproveche cada intervalo disponible sin tener que reorientarse.
+
 ### Cómo se relacionan
 
-Las cuatro afirmaciones no son eslóganes sueltos: forman un solo argumento con una tensión interna que el sistema debe resolver.
+Las cuatro afirmaciones y las dos ideas fuerza no son eslóganes sueltos: forman un solo argumento con una tensión interna que el sistema debe resolver. Las ideas fuerza (5 y 6) son la forma concreta en que las afirmaciones se vuelven experiencia de uso: el golpe de vista (5) sostiene la autoridad docente y el engagement, y la gestión del tiempo escaso (6) es el modo en que la calidad de vida (4) se vuelve real.
 
 La sobrecarga del cierre de semestre **(4)** empuja naturalmente hacia la automatización total. Ese atajo está vedado: automatizar el juicio **deshumaniza la corrección (1)** y **rompe el engagement (3)**. El único camino admisible es **suplementar (2)**: el agente absorbe lo mecánico y le devuelve al profesor el margen para ejercer su criterio. Con ese margen recuperado, el engagement vuelve a ser posible, y un docente presente corrige mejor, lo que a su vez hace sostenible el rol **(4)**.
 
@@ -49,6 +57,8 @@ La tensión entre aliviar la carga y no deshumanizar no se resuelve eligiendo un
 | 2. Suplementar la devolución agéntica | 4 (Cobertura explícita), 6 (Evidencia verificable), 8 (Criterios controlados) |
 | 3. Mantener el engagement profesor-alumno | Se materializa en las secciones 7 y 9; se apoya en los principios 1 y 2 |
 | 4. Mejorar la calidad de vida al cerrar el semestre | 4 (Cobertura explícita), 5 (Historial persistente), 7 (Alcance genérico); se mide en la sección 11 |
+| 5. Respuesta, consigna y rúbrica en un golpe de vista | Se materializa en la sección 5.4; apoya los principios 2 (Evaluación fundada) y 6 (Evidencia verificable) |
+| 6. Tiempo escaso aprovechado al máximo | Se materializa en las secciones 5.4 y 8; apoya los principios 4 (Cobertura explícita) y 5 (Historial persistente); se mide en la sección 11 |
 
 ## 1. Idea del producto
 
@@ -153,7 +163,7 @@ Los resultados quedan identificados como propuestas hasta que el profesor los re
 
 El profesor recorre una cola de unidades de revisión. Puede seguir el orden de la entrega, revisar por actividad o comparar un mismo criterio entre alumnos.
 
-Cada unidad reúne el original, la consigna pertinente, los criterios aplicables, la evidencia y los hallazgos propuestos.
+Cada unidad reúne el original, la consigna pertinente, los criterios aplicables, la evidencia y los hallazgos propuestos en una misma vista, para que el profesor resuelva con todo el contexto a la vista.
 
 El profesor registra el alcance revisado y resuelve las observaciones.
 
@@ -249,7 +259,7 @@ El tablero debe permitir responder:
 - ¿Qué revisó el profesor?
 - ¿Qué decisiones necesitan reconsiderarse?
 
-Mantener esta trazabilidad es lo que permite retomar una corrección sin releerla por completo, y por lo tanto lo que sostiene el alivio de carga buscado al cerrar el semestre.
+Mantener esta trazabilidad es lo que permite pausar y reanudar una corrección sin releerla por completo, y por lo tanto lo que sostiene el alivio de carga buscado al cerrar el semestre.
 
 ### Versiones e historial
 
