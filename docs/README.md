@@ -1,11 +1,12 @@
 # Corrección asistida por agentes con revisión docente
 
 **Tipo de documento:** concepto de producto y requisitos iniciales — PRD
-**Versión:** 0.2
+**Versión:** 0.3
 **Fecha:** 2026-10-03
 **Estado:** borrador para explorar y validar
 **Alcance:** solución genérica para corregir ejercicios, exámenes y trabajos prácticos.
 
+> **Nota de versión (0.3):** resuelve las decisiones sobre tipos de evaluación prioritarios, criterio de cierre de entrega, información entregada al alumno y alojamiento de datos.
 > **Nota de versión (0.2):** incorpora la visión del producto y enlaza los principios de funcionamiento con esa visión. El resto del documento mantiene la estructura y el alcance de la versión 0.1.
 
 ## Visión
@@ -276,6 +277,8 @@ La cantidad de hallazgos no determina directamente la nota. Un mismo problema pu
 
 La devolución está pensada como material para el diálogo docente-alumno: explica el porqué, reconoce fortalezas y orienta próximos pasos, en línea con el objetivo de mantener el engagement. Una salida limitada a un puntaje contradiría tanto la autoridad docente como ese vínculo.
 
+El resultado se entrega por ejercicio: el alumno recibe una calificación y una devolución por cada ejercicio, según la estructura del examen que resolvió.
+
 Cada exportación conserva una versión. Los formatos iniciales pueden ser Markdown y PDF.
 
 ## 10. Arquitectura tecnológica propuesta
@@ -345,15 +348,21 @@ El piloto debe observar:
 
 Las metas cuantitativas se definirán con una línea de base de corrección manual.
 
-## 12. Decisiones pendientes
+## 12. Decisiones
 
-- ¿Qué tipos de evaluación y formatos se priorizan?
-- ¿Qué debe revisar el profesor para considerar cerrada una entrega?
+### Decisiones resueltas
+
+- **Tipos de evaluación y formatos prioritarios.** Se priorizan las evaluaciones semi-estructuradas, las preguntas a desarrollar y las tareas de programación que requieran revisar un código en base a requisitos. Estos casos son los que motivan el desarrollo. La extensión a otras materias queda planteada como evolución posterior.
+- **Cierre de una entrega.** El profesor considera cerrada una entrega cuando acepta todas las unidades de revisión ("slides" de trabajo) que el agente propone, y aprueba la calificación y la devolución final para el alumno.
+- **Información que recibe el alumno.** El alumno recibe una calificación y una devolución por ejercicio, de acuerdo con la estructura del examen que resolvió.
+- **Alojamiento de datos.** Los datos se alojan en la base de datos y en almacenamiento de tipo blob.
+
+### Decisiones pendientes
+
 - ¿Cómo se presenta una revisión parcial o basada en muestreo?
 - ¿Cómo se resuelven diferencias entre docentes?
 - ¿Cómo se aplican aclaraciones de criterio a correcciones anteriores?
-- ¿Qué información del proceso recibe el alumno?
-- ¿Dónde se alojan los datos y qué política de conservación se aplica?
+- ¿Qué política de conservación se aplica a los datos almacenados?
 - ¿Qué presupuesto de procesamiento se admite por evaluación?
 - ¿Qué integraciones y formatos de exportación necesita el primer grupo de profesores?
 
