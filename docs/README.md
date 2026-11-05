@@ -1,11 +1,12 @@
 # Corrección asistida por agentes con revisión docente
 
 **Tipo de documento:** concepto de producto y requisitos iniciales — PRD
-**Versión:** 0.7
-**Fecha:** 2026-10-03
+**Versión:** 0.8
+**Fecha:** 2026-11-04
 **Estado:** borrador para explorar y validar
 **Alcance:** solución genérica para corregir ejercicios, exámenes y trabajos prácticos.
 
+> **Nota de versión (0.8):** identifica las afirmaciones e ideas fuerza de la visión como V1–V6 y los principios como P1–P8 para evitar ambigüedades; redefine el cierre de una entrega como la resolución de todas sus unidades vigentes; aclara que la corrección anónima oculta la identidad sin perder la atribución; plantea las salidas estructuradas sin atarlas a un proveedor; y clasifica las decisiones pendientes según bloqueen o no la primera versión.
 > **Nota de versión (0.7):** agrega al problema el costo de reunir respuesta, consigna y criterios dispersos, en espejo con la idea fuerza 5.
 > **Nota de versión (0.6):** agrega dos ideas fuerza de experiencia: reunir respuesta, consigna y rúbrica en un golpe de vista, y aprovechar el tiempo escaso de corrección con trazabilidad y pausa/reanudación.
 > **Nota de versión (0.5):** admite entregas individuales o grupales, siempre atribuidas a un alumno o grupo identificado; elimina los autores sin identificar.
@@ -17,49 +18,49 @@
 
 La corrección no es un cuello de botella administrativo: es un acto docente. El sistema existe para proteger ese acto, no para reemplazarlo.
 
-La visión del producto combina cuatro afirmaciones sobre el sentido del sistema y dos ideas fuerza sobre cómo debe sentirse usarlo.
+La visión del producto combina cuatro afirmaciones sobre el sentido del sistema y dos ideas fuerza sobre cómo debe sentirse usarlo. Se identifican como V1 a V6 para distinguirlas de los principios de funcionamiento (P1 a P8, sección 3).
 
 **Afirmaciones**
 
-1. **No deshumanizar la corrección.** La corrección es un juicio humano y la calificación es responsabilidad del profesor. El sistema organiza, evidencia y propone; nunca decide. Un resultado sin revisión y aprobación docente es un borrador, no una calificación.
-2. **Suplementar la devolución agéntica.** Los agentes se suman al trabajo del profesor, no lo sustituyen. Absorben la carga mecánica —recorrer entregas, localizar respuestas, aplicar criterios, ordenar hallazgos— para devolverle al docente el margen de criterio que solo él puede ejercer.
-3. **Mantener el engagement profesor-alumno.** La devolución no es un veredicto: abre una conversación. El sistema debe mejorar el material con el que el profesor dialoga con el alumno, no interponerse entre ambos ni clausurar el intercambio.
-4. **Mejorar la calidad de vida de los profesores al finalizar los semestres.** El cierre de semestre es el pico de carga y el punto donde se degrada la docencia. Aliviar ese pico de forma verificable es la métrica de éxito del producto.
+- **V1. No deshumanizar la corrección.** La corrección es un juicio humano y la calificación es responsabilidad del profesor. El sistema organiza, evidencia y propone; nunca decide. Un resultado sin revisión y aprobación docente es un borrador, no una calificación.
+- **V2. Suplementar la devolución agéntica.** Los agentes se suman al trabajo del profesor, no lo sustituyen. Absorben la carga mecánica —recorrer entregas, localizar respuestas, aplicar criterios, ordenar hallazgos— para devolverle al docente el margen de criterio que solo él puede ejercer.
+- **V3. Mantener el engagement profesor-alumno.** La devolución no es un veredicto: abre una conversación. El sistema debe mejorar el material con el que el profesor dialoga con el alumno, no interponerse entre ambos ni clausurar el intercambio.
+- **V4. Mejorar la calidad de vida de los profesores al finalizar los semestres.** El cierre de semestre es el pico de carga y el punto donde se degrada la docencia. Aliviar ese pico de forma verificable es la métrica de éxito del producto.
 
 **Ideas fuerza**
 
-5. **Respuesta, consigna y rúbrica en un golpe de vista.** Cada unidad de revisión presenta juntos el material del alumno, la consigna aplicable y los criterios de la rúbrica, para que el profesor juzgue con todo el contexto a la vista, sin cambiar de pantalla ni de archivo.
-6. **Tiempo escaso de corrección aprovechado al máximo.** El sistema lleva trazabilidad de lo hecho y lo pendiente, y permite pausar y reanudar la corrección de forma rápida y eficaz, para que el profesor aproveche cada intervalo disponible sin tener que reorientarse.
+- **V5. Respuesta, consigna y rúbrica en un golpe de vista.** Cada unidad de revisión presenta juntos el material del alumno, la consigna aplicable y los criterios de la rúbrica, para que el profesor juzgue con todo el contexto a la vista, sin cambiar de pantalla ni de archivo.
+- **V6. Tiempo escaso de corrección aprovechado al máximo.** El sistema lleva trazabilidad de lo hecho y lo pendiente, y permite pausar y reanudar la corrección de forma rápida y eficaz, para que el profesor aproveche cada intervalo disponible sin tener que reorientarse.
 
 ### Cómo se relacionan
 
-Las cuatro afirmaciones y las dos ideas fuerza no son eslóganes sueltos: forman un solo argumento con una tensión interna que el sistema debe resolver. Las ideas fuerza (5 y 6) son la forma concreta en que las afirmaciones se vuelven experiencia de uso: el golpe de vista (5) sostiene la autoridad docente y el engagement, y la gestión del tiempo escaso (6) es el modo en que la calidad de vida (4) se vuelve real.
+Las cuatro afirmaciones y las dos ideas fuerza no son eslóganes sueltos: forman un solo argumento con una tensión interna que el sistema debe resolver. Las ideas fuerza (V5 y V6) son la forma concreta en que las afirmaciones se vuelven experiencia de uso: el golpe de vista (V5) sostiene la autoridad docente y el engagement, y la gestión del tiempo escaso (V6) es el modo en que la calidad de vida (V4) se vuelve real.
 
-La sobrecarga del cierre de semestre **(4)** empuja naturalmente hacia la automatización total. Ese atajo está vedado: automatizar el juicio **deshumaniza la corrección (1)** y **rompe el engagement (3)**. El único camino admisible es **suplementar (2)**: el agente absorbe lo mecánico y le devuelve al profesor el margen para ejercer su criterio. Con ese margen recuperado, el engagement vuelve a ser posible, y un docente presente corrige mejor, lo que a su vez hace sostenible el rol **(4)**.
+La sobrecarga del cierre de semestre **(V4)** empuja naturalmente hacia la automatización total. Ese atajo está vedado: automatizar el juicio **deshumaniza la corrección (V1)** y **rompe el engagement (V3)**. El único camino admisible es **suplementar (V2)**: el agente absorbe lo mecánico y le devuelve al profesor el margen para ejercer su criterio. Con ese margen recuperado, el engagement vuelve a ser posible, y un docente presente corrige mejor, lo que a su vez hace sostenible el rol **(V4)**.
 
 ```
 sobrecarga de cierre ──presiona hacia──▶ automatizar todo
         │                                       │
-        │                          prohibido por (1) y (3)
+        │                         prohibido por (V1) y (V3)
         ▼                                       ▼
-calidad de vida (4) ◀──habilita── suplementar (2)
+calidad de vida (V4) ◀──habilita── suplementar (V2)
         │
         ▼
-engagement (3) ──▶ corrige mejor ──▶ rol sostenible (4)
+engagement (V3) ──▶ corrige mejor ──▶ rol sostenible (V4)
 ```
 
 La tensión entre aliviar la carga y no deshumanizar no se resuelve eligiendo un bando, se resuelve con **diseño**: la frontera entre lo que el agente hace solo y lo que exige una decisión humana es el objeto central del sistema.
 
 ### Relación con los principios de funcionamiento
 
-| Afirmación de la visión | Principios que la implementan |
+| Visión | Principios que la implementan |
 |---|---|
-| 1. No deshumanizar la corrección | 1 (Autoridad docente), 2 (Evaluación fundada), 3 (Originales preservados), 6 (Evidencia verificable), 8 (Criterios controlados) |
-| 2. Suplementar la devolución agéntica | 4 (Cobertura explícita), 6 (Evidencia verificable), 8 (Criterios controlados) |
-| 3. Mantener el engagement profesor-alumno | Se materializa en las secciones 7 y 9; se apoya en los principios 1 y 2 |
-| 4. Mejorar la calidad de vida al cerrar el semestre | 4 (Cobertura explícita), 5 (Historial persistente), 7 (Alcance genérico); se mide en la sección 11 |
-| 5. Respuesta, consigna y rúbrica en un golpe de vista | Se materializa en la sección 5.4; apoya los principios 2 (Evaluación fundada) y 6 (Evidencia verificable) |
-| 6. Tiempo escaso aprovechado al máximo | Se materializa en las secciones 5.4 y 8; apoya los principios 4 (Cobertura explícita) y 5 (Historial persistente); se mide en la sección 11 |
+| V1. No deshumanizar la corrección | P1 (Autoridad docente), P2 (Evaluación fundada), P3 (Originales preservados), P6 (Evidencia verificable), P8 (Criterios controlados) |
+| V2. Suplementar la devolución agéntica | P4 (Cobertura explícita), P6 (Evidencia verificable), P8 (Criterios controlados) |
+| V3. Mantener el engagement profesor-alumno | Se materializa en las secciones 7 y 9; se apoya en P1 y P2 |
+| V4. Mejorar la calidad de vida al cerrar el semestre | P4 (Cobertura explícita), P5 (Historial persistente), P7 (Alcance genérico); se mide en la sección 11 |
+| V5. Respuesta, consigna y rúbrica en un golpe de vista | Se materializa en la sección 5.4; apoya P2 (Evaluación fundada) y P6 (Evidencia verificable) |
+| V6. Tiempo escaso aprovechado al máximo | Se materializa en las secciones 5.4 y 8; apoya P4 (Cobertura explícita) y P5 (Historial persistente); se mide en la sección 11 |
 
 ## 1. Idea del producto
 
@@ -96,14 +97,14 @@ Los principios siguientes operacionalizan la visión: acotan qué puede hacer el
 
 Principios de funcionamiento:
 
-1. **Autoridad docente.** El profesor decide las interpretaciones, las observaciones que se comunican y la calificación final.
-2. **Evaluación fundada.** Las conclusiones deben vincularse con la consigna, la rúbrica y la evidencia de la entrega.
-3. **Originales preservados.** Las anotaciones y los análisis se almacenan separados del material recibido.
-4. **Cobertura explícita.** Abrir un fragmento, analizarlo y revisarlo son acciones diferentes.
-5. **Historial persistente.** Las decisiones conservan autor, fecha, alcance y versiones involucradas.
-6. **Evidencia verificable.** Una inferencia estática y un resultado de ejecución se identifican como tales.
-7. **Alcance genérico.** El modelo admite documentos, código, imágenes, procedimientos y otros tipos de respuesta.
-8. **Criterios controlados.** Las aclaraciones del profesor quedan registradas; los agentes no agregan requisitos por su cuenta.
+- **P1. Autoridad docente.** El profesor decide las interpretaciones, las observaciones que se comunican y la calificación final.
+- **P2. Evaluación fundada.** Las conclusiones deben vincularse con la consigna, la rúbrica y la evidencia de la entrega.
+- **P3. Originales preservados.** Las anotaciones y los análisis se almacenan separados del material recibido.
+- **P4. Cobertura explícita.** Abrir un fragmento, analizarlo y revisarlo son acciones diferentes.
+- **P5. Historial persistente.** Las decisiones conservan autor, fecha, alcance y versiones involucradas.
+- **P6. Evidencia verificable.** Una inferencia estática y un resultado de ejecución se identifican como tales.
+- **P7. Alcance genérico.** El modelo admite documentos, código, imágenes, procedimientos y otros tipos de respuesta.
+- **P8. Criterios controlados.** Las aclaraciones del profesor quedan registradas; los agentes no agregan requisitos por su cuenta.
 
 ## 4. Usuarios y entradas
 
@@ -119,7 +120,7 @@ Entradas necesarias:
 
 Entradas opcionales: nómina de alumnos, respuesta de referencia, aclaraciones docentes y exportación de un campus virtual.
 
-La identidad del alumno puede permanecer oculta durante la revisión si el profesor configura una corrección anónima.
+La identidad del alumno puede permanecer oculta durante la revisión si el profesor configura una corrección anónima. El anonimato solo afecta a lo que se muestra: la atribución unívoca de cada entrega a un alumno o grupo (sección 5.1) se conserva siempre en los datos y vuelve a mostrarse al preparar la devolución.
 
 ## 5. Flujo de trabajo
 
@@ -320,7 +321,7 @@ Para presentar originales se consideran [PDF.js](https://mozilla.github.io/pdf.j
 
 Las responsabilidades iniciales serían preparar la evaluación, analizar respuestas, contrastar observaciones y redactar el resultado. Pueden implementarse como tareas especializadas sin requerir un agente autónomo permanente para cada papel.
 
-Los resultados deben seguir esquemas estructurados. Como opción, [Structured Outputs de OpenAI](https://developers.openai.com/api/docs/guides/structured-outputs) permite definir salidas mediante JSON Schema.
+Los resultados deben seguir esquemas estructurados, definidos con JSON Schema y validados por la aplicación al recibirlos. Varios proveedores ofrecen salidas estructuradas o uso de herramientas que admiten estos esquemas —por ejemplo, [Structured Outputs de OpenAI](https://developers.openai.com/api/docs/guides/structured-outputs)—; el adaptador de cada proveedor traduce el esquema común, de modo que cambiar de modelo no altera el formato de los hallazgos ni el registro de revisión.
 
 [LangGraph](https://docs.langchain.com/oss/python/langgraph/interrupts) se considera cuando hagan falta flujos con ramificaciones, persistencia y pausas. El registro docente permanece en el modelo de datos de la aplicación.
 
@@ -364,18 +365,24 @@ Las metas cuantitativas se definirán con una línea de base de corrección manu
 ### Decisiones resueltas
 
 - **Tipos de evaluación y formatos prioritarios.** Se priorizan las evaluaciones semi-estructuradas, las preguntas a desarrollar y las tareas de programación que requieran revisar un código en base a requisitos. Estos casos son los que motivan el desarrollo. La extensión a otras materias queda planteada como evolución posterior.
-- **Cierre de una entrega.** El profesor considera cerrada una entrega cuando acepta todas las unidades de revisión ("slides" de trabajo) que el agente propone, y aprueba la calificación y la devolución final para el alumno.
+- **Cierre de una entrega.** Una entrega queda cerrada cuando el profesor resolvió todas sus unidades de revisión vigentes y aprobó la calificación y la devolución final para el alumno. Las unidades vigentes son las que resultan de los ajustes del profesor (sección 6), no necesariamente las que propuso el agente. Una unidad está resuelta cuando el profesor registró su revisión y ninguno de sus hallazgos quedó pendiente: cada uno fue aceptado, modificado o descartado.
 - **Información que recibe el alumno.** El alumno recibe una calificación y una devolución por ejercicio, de acuerdo con la estructura del examen que resolvió.
 - **Alojamiento de datos.** Los datos se alojan en la base de datos y en almacenamiento de tipo blob.
 
 ### Decisiones pendientes
 
-- ¿Cómo se presenta una revisión parcial o basada en muestreo?
-- ¿Cómo se resuelven diferencias entre docentes?
-- ¿Cómo se aplican aclaraciones de criterio a correcciones anteriores?
-- ¿Qué política de conservación se aplica a los datos almacenados?
-- ¿Qué presupuesto de procesamiento se admite por evaluación?
-- ¿Qué integraciones y formatos de exportación necesita el primer grupo de profesores?
+**Bloquean la primera versión** (deben resolverse antes de construir el recorrido de la sección 11):
+
+- ¿Qué presupuesto de procesamiento se admite por evaluación? Condiciona qué modelos se usan, cuántas corridas de análisis se permiten y si se analiza cada unidad o solo una parte.
+- ¿Cómo se presenta una revisión parcial o basada en muestreo? Afecta al tablero de cobertura (sección 8) y a la regla de cierre de una entrega (sección 12).
+- ¿Qué formatos de exportación necesita el primer grupo de profesores? La sección 9 propone Markdown y PDF; hay que confirmar si alcanzan para el piloto.
+
+**Pueden postergarse** (no afectan el recorrido de un solo profesor con una evaluación):
+
+- ¿Cómo se resuelven diferencias entre docentes? La colaboración entre varios docentes queda fuera de la primera versión (sección 4).
+- ¿Cómo se aplican aclaraciones de criterio a correcciones anteriores? En la primera versión basta con que el historial (sección 8) señale las revisiones afectadas; la forma de propagar la aclaración se define después.
+- ¿Qué política de conservación se aplica a los datos almacenados? Debe definirse antes de usar datos reales de alumnos fuera del piloto.
+- ¿Qué integraciones con campus virtuales se necesitan? Quedan fuera de la primera versión (sección 11).
 
 ## 13. Hipótesis central
 
